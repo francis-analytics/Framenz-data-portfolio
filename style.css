@@ -1,0 +1,198 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header{
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+section{
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project{
+    background-color: #eeeeee;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+    color: #1e3a8a;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.hero{
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 18px;
+}
+
+.intro{
+    max-width: 700px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+button{
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-btn{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.projects-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-card h3{
+    color: #1e3a8a;
+}
+
+.project-card p{
+    line-height: 1.6;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill{
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.profile-pic{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+.hero-buttons{
+    margin-top: 20px;
+}
+
+.github-btn{
+    background-color: #111827;
+    border: 2px solid white;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+footer{
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+
+    .hero h1{
+        font-size: 35px;
+    }
+
+    .projects-container{
+        flex-direction: column;
+    }
+
+    .skills-container{
+        justify-content: center;
+    }
+
+    .profile-pic{
+        width: 140px;
+        height: 140px;
+    }
+
+    button{
+        width: 80%;
+    }
+
+}
